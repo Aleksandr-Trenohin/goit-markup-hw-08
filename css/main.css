@@ -132,15 +132,6 @@ img {
 }
 
 .burger {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.burger.is-open {
   position: fixed;
   top: 0;
   left: 0;
@@ -151,12 +142,21 @@ img {
   background-color: var(--primary-white-color);
   visibility: visible;
   opacity: 1;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 796px) {
-  .burger.is-open {
+  .burger {
     display: none;
   }
+}
+
+.burger.is-hidden {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .burger__btn {
