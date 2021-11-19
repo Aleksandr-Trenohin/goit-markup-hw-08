@@ -59,8 +59,72 @@
             </a>
           </li>
         </ul>
+
+        <button class="btn header__btn" type="button" data-burger-open>
+          <svg class="header__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
+    <!-- бургер -->
+    <div class="burger is-open" data-burger>
+      <button type="button" class="btn burger__btn" data-burger-close>
+        <svg class="burger__icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <div class="burger__wrap">
+        <nav>
+          <ul>
+            <li class="burger__item">
+              <a
+                href="./index.html"
+                class="link burger-nav__link burger-nav__link--current"
+                >Студия</a
+              >
+            </li>
+            <li class="burger__item">
+              <a href="./portfolio.html" class="link burger-nav__link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="burger__item">
+              <a href="" class="link burger-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="burger__contacts">
+          <li class="burger__item">
+            <a href="mailto:info@devstudio.com" class="link burger-email__link">
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="burger__item">
+            <a href="tel:+380961111111" class="link burger-tel__link"
+              >+38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+
+        <ul class="burger-socials">
+          <li class="burger-socials__item">
+            <a href="" class="link burger-socials__link">Instagram</a>
+          </li>
+          <li class="burger-socials__item">
+            <a href="" class="link burger-socials__link">Twitter</a>
+          </li>
+          <li class="burger-socials__item">
+            <a href="" class="link burger-socials__link">Facebook</a>
+          </li>
+          <li class="burger-socials__item">
+            <a href="" class="link burger-socials__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <!--Уникальная часть (страница) сайта-->
     <main>
@@ -71,7 +135,7 @@
         </button>
       </section>
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section__title visually-hidden">Особенности</h2>
           <ul class="features">
@@ -125,9 +189,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section works">
+      <!-- <section class="section works">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="works__list">
@@ -157,9 +221,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section team">
+      <!-- <section class="section team">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list">
@@ -313,9 +377,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section clients">
+      <!-- <section class="section clients">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="clients__list">
@@ -357,13 +421,13 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!--Подвал-->
     <footer class="footer">
       <div class="container footer__container">
-        <div>
+        <!-- <div>
           <a href="./index.html" lang="en" class="logo">
             Web<span class="logo__text logo__text--inverse">Studio</span></a
           >
@@ -391,9 +455,9 @@
               </li>
             </ul>
           </address>
-        </div>
+        </div> -->
 
-        <div class="footer-socials">
+        <!-- <div class="footer-socials">
           <p class="footer-socials__text">присоединяйтесь</p>
           <ul class="socials">
             <li class="socials__item">
@@ -421,9 +485,9 @@
               ></a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
-        <form class="footer-form">
+        <!-- <form class="footer-form">
           <p class="footer-form__text">Подпишитесь на рассылку</p>
           <div class="footer-form__field">
             <input
@@ -438,7 +502,7 @@
               </svg>
             </button>
           </div>
-        </form>
+        </form> -->
       </div>
     </footer>
 
@@ -452,7 +516,7 @@
         </button>
 
         <!-- форма -->
-        <form class="modal-form">
+        <!-- <form class="modal-form">
           <p class="modal-form__text">
             Оставьте свои данные, мы вам перезвоним
           </p>
@@ -514,9 +578,10 @@
               <use href="./images/icons.svg#icon-check"></use></svg
           ></label>
           <button type="submit" class="btn modal-form__btn">Отправить</button>
-        </form>
+        </form> -->
       </div>
     </div>
+    <script src="./js/burger.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

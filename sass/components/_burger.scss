@@ -1,0 +1,162 @@
+.burger {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+// transform
+.burger.is-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 11;
+
+  padding: 48px 40px;
+  background-color: var(--primary-white-color);
+
+  visibility: visible;
+  opacity: 1;
+
+  @media screen and (min-width: 796px) {
+    display: none;
+  }
+}
+.burger__btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  display: block;
+  padding: 0;
+  background-color: var(--primary-white-color);
+  color: var(--logo-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+// display: flex;
+// justify-content: center;
+// align-items: center;
+// width: 30px;
+// height: 30px;
+
+// border: 1px solid rgba(0, 0, 0, 0.1);
+// border-radius: 50%;
+
+.burger__icon {
+  //   width: 40px;
+  //   height: 40px;
+  fill: currentColor;
+}
+.burger__wrap {
+  display: flex;
+  flex-direction: column;
+  //   justify-content: space-between;
+  height: 100%;
+}
+/* navigation */
+// .nav {
+//   display: none;
+//   @media screen and (min-width: 768px) {
+//     display: flex;
+//   }
+// }
+.burger__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+/** .nav__item + .nav__item {
+  margin-left: 50px;
+} аналог */
+.burger-nav__link {
+  //   position: relative;
+  //   display: block;
+
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  // &-амперсанд
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &--current {
+    color: var(--accent-color);
+  }
+}
+
+.burger__contacts {
+  margin-top: auto;
+  margin-bottom: 64px;
+}
+.burger-email__link {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  @media screen and (min-width: 410px) {
+    font-size: 34px;
+  }
+}
+.burger-tel__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.burger-socials {
+  display: flex;
+  @media screen and (max-width: 430px) {
+    flex-wrap: wrap;
+  }
+  //   justify-content: space-between;
+  margin: -10px;
+}
+.burger-socials__item {
+  position: relative;
+  margin: 10px;
+}
+.burger-socials__item:not(:last-child) {
+  //   transform: rotate(90deg);
+  &::after {
+    position: absolute;
+    right: -10px;
+    top: 0;
+
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+
+    background-color: rgba(33, 33, 33, 0.2);
+    // border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+.burger-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}

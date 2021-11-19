@@ -1,6 +1,10 @@
 body {
   /* для фиксированной шапки */
-  padding-top: 80px;
+  padding-top: 60px;
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+  }
+  // padding-top: 80px;
 
   background-color: var(--primary-white-color);
 
@@ -31,4 +35,6 @@ p {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
