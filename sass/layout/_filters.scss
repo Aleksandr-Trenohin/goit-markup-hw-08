@@ -1,7 +1,7 @@
 /* filters */
 .filters {
   display: flex;
-  // flex-wrap: wrap;
+
   margin-bottom: 40px;
 
   @media screen and (max-width: 767px) {
@@ -13,7 +13,6 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
     justify-content: center;
-    // flex-wrap: nowrap;
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
@@ -30,9 +29,7 @@
     }
   }
 }
-// .filters__item:not(:last-child) {
-//   margin-right: 8px;
-// }
+
 .filters__btn {
   min-height: 38px;
   background-color: var(--bright-bg-color);

@@ -1,13 +1,12 @@
 /* hero */
 .hero {
-  // text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: var(--hero-bg-color);
 
   /* фон-картинка */
   max-width: 480px;
-  // height: auto;
+
   min-height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -36,7 +35,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero-tablet.jpg);
+      url(../images/hero-tablet.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -44,7 +43,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/hero-tablet-2x.jpg);
+        url(../images/hero-tablet-2x.jpg);
     }
   }
   @media screen and (min-width: 769px) {
@@ -54,7 +53,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero-desktop.jpg);
+      url(../images/hero-desktop.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -62,7 +61,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/hero-desktop-2x.jpg);
+        url(../images/hero-desktop-2x.jpg);
     }
     @media screen and (min-width: 1200px) {
       min-height: 600px;
@@ -71,26 +70,7 @@
     }
   }
 }
-// .hero {
-//   text-align: center;
-//   padding-top: 200px;
-//   padding-bottom: 200px;
-//   background-color: var(--hero-bg-color);
 
-//   /* фон-картинка */
-//   max-width: 1600px;
-//   min-height: 600px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   background-image: linear-gradient(
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url(../images/web-studio.jpg);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-// }
 .hero__title {
   max-width: 360px;
   margin-left: auto;
@@ -111,19 +91,7 @@
     line-height: 1.36;
   }
 }
-// .hero__title {
-//   width: 696px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   margin-bottom: 30px;
 
-//   color: var(--primary-white-color);
-//   font-weight: 900;
-//   font-size: 44px;
-//   line-height: 1.36;
-//   letter-spacing: 0.06em;
-//   text-transform: uppercase;
-// }
 .hero__btn {
   display: block;
   margin: 0 auto;

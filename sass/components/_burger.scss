@@ -47,15 +47,6 @@
   }
 }
 
-// display: flex;
-// justify-content: center;
-// align-items: center;
-// width: 30px;
-// height: 30px;
-
-// border: 1px solid rgba(0, 0, 0, 0.1);
-// border-radius: 50%;
-
 .burger__icon {
   //   width: 40px;
   //   height: 40px;
@@ -64,16 +55,10 @@
 .burger__wrap {
   display: flex;
   flex-direction: column;
-  //   justify-content: space-between;
+
   height: 100%;
 }
-/* navigation */
-// .nav {
-//   display: none;
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//   }
-// }
+
 .burger__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -81,9 +66,6 @@
   margin-left: 50px;
 } аналог */
 .burger-nav__link {
-  //   position: relative;
-  //   display: block;
-
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 40px;
@@ -130,7 +112,7 @@
   @media screen and (max-width: 430px) {
     flex-wrap: wrap;
   }
-  //   justify-content: space-between;
+
   margin: -10px;
 }
 .burger-socials__item {
@@ -138,7 +120,6 @@
   margin: 10px;
 }
 .burger-socials__item:not(:last-child) {
-  //   transform: rotate(90deg);
   &::after {
     position: absolute;
     right: -10px;
@@ -150,7 +131,6 @@
     height: 100%;
 
     background-color: rgba(33, 33, 33, 0.2);
-    // border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
 .burger-socials__link {
