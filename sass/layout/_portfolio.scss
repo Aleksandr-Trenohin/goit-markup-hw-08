@@ -1,31 +1,50 @@
 /* portfolio */
 .portfolio {
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    // align-items: stretch;
+    // align-content: stretch;
     // justify-content: center;
     margin: -15px;
   }
-  @media screen and (max-width: 1199px) {
+  // @media screen and (max-width: 1199px) {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
+}
+.container__portfolio {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 768px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 .portfolio__item {
+  // display: block;
+  max-width: 450px;
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
+
+    margin-left: auto;
+    margin-right: auto;
   }
   @media screen and (min-width: 768px) {
     width: calc((100% - 2 * 30px) / 2);
     max-width: 354px;
     margin: 15px;
+    // flex-grow: 1;
+    // &:last-child {
+    //   margin-right: auto;
+    // }
   }
   @media screen and (min-width: 1200px) {
     // width: calc((100% - 6 * 15px) / 3);
     // - аналог
     width: calc((100% - 3 * 30px) / 3);
+    max-width: 370px;
   }
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -46,6 +65,14 @@
 // }
 .portfolio__link {
   display: block;
+  height: 100%;
+  // display: flex;
+  // flex-direction: column;
+  // align-content: stretch;
+  // justify-content: space-between;
+  border-right: 1px solid var(--portfolio-border-color);
+  border-bottom: 1px solid var(--portfolio-border-color);
+  border-left: 1px solid var(--portfolio-border-color);
 
   &:hover,
   &:focus {
@@ -83,13 +110,14 @@
   }
 }
 .portfolio__card {
+  // margin-top: auto;
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-  border-right: 1px solid var(--portfolio-border-color);
-  border-bottom: 1px solid var(--portfolio-border-color);
-  border-left: 1px solid var(--portfolio-border-color);
+  // border-right: 1px solid var(--portfolio-border-color);
+  // border-bottom: 1px solid var(--portfolio-border-color);
+  // border-left: 1px solid var(--portfolio-border-color);
 }
 .portfolio__title {
   margin-bottom: 4px;
