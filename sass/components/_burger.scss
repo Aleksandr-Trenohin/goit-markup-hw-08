@@ -6,7 +6,9 @@
   height: 100vh;
   z-index: 11;
 
-  padding: 48px 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  // padding: 48px 40px;
   background-color: var(--primary-white-color);
 
   visibility: visible;
@@ -15,26 +17,41 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (min-width: 796px) {
+  @media screen and (min-width: 768px) {
     display: none;
+  }
+  &.is-hidden {
+    // position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
   }
 }
 // transform
-.burger.is-hidden {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+
+// .burger.is-hidden {
+//   position: absolute;
+//   visibility: hidden;
+//   opacity: 0;
+//   pointer-events: none;
+// }
+.burger__container {
+  position: relative;
+
+  height: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .burger__btn {
   position: absolute;
-  top: 10px;
+  top: -38px;
   right: 15px;
 
-  display: block;
+  // display: block;
   padding: 0;
   background-color: var(--primary-white-color);
   color: var(--logo-color);
+  line-height: 0;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

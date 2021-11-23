@@ -72,57 +72,62 @@
 
     <!-- бургер -->
     <div class="burger is-hidden" data-burger>
-      <button type="button" class="btn burger__btn" data-burger-close>
-        <svg class="burger__icon" width="40" height="40">
-          <use href="./images/icons.svg#icon-burger"></use>
-        </svg>
-      </button>
-      <div class="burger__wrap">
-        <nav>
-          <ul>
-            <li class="burger__item">
-              <a href="./index.html" class="link burger-nav__link">Студия</a>
-            </li>
+      <div class="container burger__container">
+        <button type="button" class="btn burger__btn" data-burger-close>
+          <svg class="burger__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="burger__wrap">
+          <nav>
+            <ul>
+              <li class="burger__item">
+                <a href="./index.html" class="link burger-nav__link">Студия</a>
+              </li>
+              <li class="burger__item">
+                <a
+                  href="./portfolio.html"
+                  class="link burger-nav__link burger-nav__link--current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="burger__item">
+                <a href="" class="link burger-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="burger__contacts">
             <li class="burger__item">
               <a
-                href="./portfolio.html"
-                class="link burger-nav__link burger-nav__link--current"
-                >Портфолио</a
+                href="mailto:info@devstudio.com"
+                class="link burger-email__link"
+              >
+                info@devstudio.com</a
               >
             </li>
             <li class="burger__item">
-              <a href="" class="link burger-nav__link">Контакты</a>
+              <a href="tel:+380961111111" class="link burger-tel__link"
+                >+38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
 
-        <ul class="burger__contacts">
-          <li class="burger__item">
-            <a href="mailto:info@devstudio.com" class="link burger-email__link">
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="burger__item">
-            <a href="tel:+380961111111" class="link burger-tel__link"
-              >+38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-
-        <ul class="burger-socials">
-          <li class="burger-socials__item">
-            <a href="" class="link burger-socials__link">Instagram</a>
-          </li>
-          <li class="burger-socials__item">
-            <a href="" class="link burger-socials__link">Twitter</a>
-          </li>
-          <li class="burger-socials__item">
-            <a href="" class="link burger-socials__link">Facebook</a>
-          </li>
-          <li class="burger-socials__item">
-            <a href="" class="link burger-socials__link">LinkedIn</a>
-          </li>
-        </ul>
+          <ul class="burger-socials">
+            <li class="burger-socials__item">
+              <a href="" class="link burger-socials__link">Instagram</a>
+            </li>
+            <li class="burger-socials__item">
+              <a href="" class="link burger-socials__link">Twitter</a>
+            </li>
+            <li class="burger-socials__item">
+              <a href="" class="link burger-socials__link">Facebook</a>
+            </li>
+            <li class="burger-socials__item">
+              <a href="" class="link burger-socials__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
