@@ -29,12 +29,6 @@
 }
 // transform
 
-// .burger.is-hidden {
-//   position: absolute;
-//   visibility: hidden;
-//   opacity: 0;
-//   pointer-events: none;
-// }
 .burger__container {
   position: relative;
 
@@ -65,8 +59,6 @@
 }
 
 .burger__icon {
-  //   width: 40px;
-  //   height: 40px;
   fill: currentColor;
 }
 .burger__wrap {
