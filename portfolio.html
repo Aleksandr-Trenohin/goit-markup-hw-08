@@ -46,23 +46,51 @@
         <ul class="contacts">
           <li class="contacts__item">
             <a href="mailto:info@devstudio.com" class="link contacts__link"
-              ><svg class="contacts__icon" width="16" height="12">
+              ><svg
+                class="contacts__icon contacts__icon--desktop"
+                width="16"
+                height="12"
+              >
                 <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              <svg
+                class="contacts__icon contacts__icon--tablet"
+                width="14"
+                height="10"
+              >
+                <use href="./images/icons.svg#icon-envelope-tablet"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li class="contacts__item">
             <a href="tel:+380961111111" class="link contacts__link"
-              ><svg class="contacts__icon" width="10" height="16">
+              ><svg
+                class="contacts__icon contacts__icon--desktop"
+                width="10"
+                height="16"
+              >
                 <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              <svg
+                class="contacts__icon contacts__icon--tablet"
+                width="10"
+                height="14"
+              >
+                <use href="./images/icons.svg#icon-smartphone-tablet"></use>
               </svg>
               +38 096 111 11 11
             </a>
           </li>
         </ul>
 
-        <button class="btn header__btn" type="button" data-burger-open>
+        <button
+          class="btn header__btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+          aria-label="Кнопка открытия мобильного меню"
+        >
           <svg class="header__icon" width="40" height="40">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -71,9 +99,13 @@
     </header>
 
     <!-- бургер -->
-    <div class="burger is-hidden" data-burger>
+    <div class="burger js-menu-container" id="mobile-menu">
       <div class="container burger__container">
-        <button type="button" class="btn burger__btn" data-burger-close>
+        <button
+          type="button"
+          class="btn burger__btn js-close-menu"
+          aria-label="Кнопка закрытия мобильного меню"
+        >
           <svg class="burger__icon" width="40" height="40">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
@@ -797,6 +829,12 @@
         </form>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
